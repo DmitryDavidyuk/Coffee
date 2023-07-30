@@ -66,6 +66,7 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   height: 100%;
+  width: 100%;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -98,8 +99,6 @@ body {
 .header {
   padding-top: 21px;
   padding-bottom: 21px;
-  /* position: absolute; */
-  width: 100%;
   z-index: 2;
 }
 .container__header {
@@ -113,7 +112,6 @@ body {
   font-family: Clicker Script;
   font-size: 2.5rem;
   line-height: 127%;
-  position: relative;
   z-index: 1;
 }
 
@@ -568,7 +566,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateX(110%);
+    transform: translateY(-110%);
     width: 100%;
     height: 100%;
     padding-top: 120px;
@@ -580,7 +578,7 @@ body {
     transition: all 0.3s ease 0s;
   }
   .menu__list.menu--open {
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
   .menu__list-link {
     font-size: 24px;
