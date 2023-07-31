@@ -19,7 +19,6 @@ a:active {
 html,
 body {
   height: 100%;
-  background-color: #000;
 }
 body.lock {
   overflow: hidden;
@@ -107,7 +106,14 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  transition: all 0.3s ease 0s;
 }
+.header._header-scroll {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .container__header {
   display: flex;
   justify-content: space-between;
@@ -194,10 +200,22 @@ body {
 
 .container__discover {
   display: flex;
-  gap: 95px;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
   align-items: center;
   padding-top: 71px;
   padding-bottom: 150px;
+}
+.discover__content {
+  max-width: 585px;
+  flex: 1 1 50%;
+}
+.discover__image {
+  max-width: 500px;
+  flex: 1 1 auto;
+}
+.discover__image img {
+  width: 100%;
 }
 .discover__text {
   margin-bottom: 43px;
@@ -205,8 +223,9 @@ body {
 
 .coffe-blast {
   position: absolute;
+  pointer-events: none;
   left: 0;
-  bottom: 0;
+  bottom: -25px;
 }
 .coffe-blast-2 {
   position: absolute;
@@ -553,13 +572,26 @@ body {
   max-width: 380px;
 }
 
-@media (max-width: 800px) {
-  .menu__list {
-    gap: 30px;
+@media (max-width: 944px) {
+  .container__discover {
+    flex-direction: column;
+  }
+  .discover__image {
+    position: relative;
+    z-index: -1;
   }
 }
 
 @media (max-width: 800px) {
+  .menu__list {
+    gap: 30px;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .text {
+    font-size: 18px;
+  }
   .header__logo {
     font-size: 1.8rem;
   }
@@ -640,13 +672,6 @@ body {
   .header__button-2 {
     margin-left: 15px;
   }
-  /* .header__buttons {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 15px;
-  } */
 }
 @media (max-width: 768px) {
   .home__title {
@@ -666,5 +691,13 @@ body {
   .home__text {
     font-size: 10px;
     max-width: 370px;
+  }
+  .coffe-blast {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .home__title {
+    font-size: 125px;
   }
 }
