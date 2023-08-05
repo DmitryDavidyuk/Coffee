@@ -390,6 +390,7 @@ body {
 
 /*------------feedback--------------------------------------------*/
 .feedback {
+  position: relative;
   padding-top: 82px;
   padding-bottom: 138px;
   padding: 0 50px;
@@ -483,12 +484,14 @@ body {
 }
 .coffe-blast-1 {
   position: absolute;
+  z-index: 2;
   left: 0;
   bottom: 0;
   transform: rotateX(180deg);
 }
 .coffe-blast-3 {
   position: absolute;
+  z-index: 2;
   right: 0;
   top: 0;
   transform: rotateY(180deg);
@@ -784,6 +787,9 @@ body {
     max-width: 500px;
   }
   .coffe-blast-1 {
+    display: none;
+  }
+  .coffe-blast-3 {
     display: none;
   }
   .review-feedback__name {
