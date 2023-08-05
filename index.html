@@ -11,6 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
     <title>Coffee</title>
   </head>
   <body>
@@ -194,7 +198,7 @@
             alt="coffee blast"
           />
         </section>
-       <!-- <section class="get">
+       <section class="get">
           <div class="container container__get">
             <div class="get__content">
               <h2 class="get__title title">
@@ -212,7 +216,7 @@
           </div>
           <img src="./img/coffee_bean.png" alt="coffee" />
         </section>
-        <section class="feedback">
+         <section class="feedback">
           <div class="container container__feedback">
             <h2 class="feedback__title title">
               Our coffee perfection feedback
@@ -220,32 +224,54 @@
             <div class="feedback__text text">
               Our customers has amazing things to say about us
             </div>
-            <div class="feedback__reviews">
-              <div class="feedback__review review-feedback">
-                <div class="review-feedback-decor">“</div>
-                <p class="review-feedback__text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset.....
-                </p>
-                <div class="review-feedback__name">Jonny Thomas</div>
-                <div class="review-feedback__position">Project Manager</div>
-                <div class="review-feedback__photo">
-                  <img src="./img/ava.png" alt="photo" />
-                </div>
+            <div class="feedback__reviews swiper">
+              <div class="swiper-wrapper">
+                <div class="feedback__review review-feedback swiper-slide">
+                  <div class="review-feedback-decor">“</div>
+                  <p class="review-feedback__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type
+                    specimen book. It has survived not only five centuries, but
+                    also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset.....
+                  </p>
+                  <div class="review-feedback-user">
+                    <div class="review-feedback__name">Jonny Thomas</div>
+                    <div class="review-feedback__position">Project Manager</div>
+                    <div class="review-feedback__photo">
+                      <img src="./img/ava.png" alt="photo" />
+                    </div>
+                  </div>
+                  </div>
+                  <div class="feedback__review review-feedback swiper-slide">
+                    <div class="review-feedback-decor">“</div>
+                    <p class="review-feedback__text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer 
+                    </p>
+                    <div class="review-feedback-user">
+                      <div class="review-feedback__name">Jonny Thomas</div>
+                      <div class="review-feedback__position">Project Manager</div>
+                      <div class="review-feedback__photo">
+                        <img src="./img/ava.png" alt="photo" />
+                      </div>
+                    </div>
+                    </div>
+                  
               </div>
+              
 
-              <button class="swiper-btn swiper-btn-1" type="button">
+              <div class="swiper-btn swiper-btn-1">
                 <img src="./img/arrow-left2.svg" alt="left" />
-              </button>
-              <button class="swiper-btn swiper-btn-2" type="button">
+              </div>
+              <div class="swiper-btn swiper-btn-2">
                 <img src="./img/arrow-right2.svg" alt="right" />
-              </button>
+              </div>
             </div>
           </div>
           <img
@@ -259,7 +285,7 @@
             alt="coffee blast"
           />
         </section>
-        <section class="subscribe">
+       <!-- <section class="subscribe">
           <div class="container subscribe__container">
             <h2 class="subscribe__title title">
               Subscribe to get the Latest News
@@ -425,6 +451,7 @@
         </div>
        </footer> -->
     </div>
-    <script src="./mine.js"></script>
+    <script type="module" src="./mine.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </body>
 </html>

@@ -1,3 +1,4 @@
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs";
 const menuBtn = document.querySelector(".menu__btn");
 const menuMobile = document.querySelector(".menu__list");
 const body = document.querySelector("body");
@@ -66,3 +67,11 @@ setTimeout(() => {
     });
   }
 }, 0);
+
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-btn-1",
+    prevEl: ".swiper-btn-2",
+  },
+});
