@@ -163,11 +163,18 @@ body {
 /*--------home--------------------------------------------------------*/
 .home {
   background-image: url(../img/coffee_image.jpg);
+  overflow-x: clip;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   height: 100vh;
-  padding-top: 183px;
+  padding-top: 50px;
+}
+.container__home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .home__subtitle {
