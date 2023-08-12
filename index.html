@@ -10,11 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Coffee</title>
   </head>
   <body>
@@ -198,7 +199,7 @@
             alt="coffee blast"
           />
         </section>
-       <section class="get">
+        <section class="get">
           <div class="container container__get">
             <div class="get__content">
               <h2 class="get__title title">
@@ -216,7 +217,7 @@
           </div>
           <img src="./img/coffee_bean.png" alt="coffee" />
         </section>
-         <section class="feedback">
+        <section class="feedback">
           <div class="container container__feedback">
             <h2 class="feedback__title title">
               Our coffee perfection feedback
@@ -232,9 +233,9 @@
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a type
-                    specimen book. It has survived not only five centuries, but
-                    also the leap into electronic typesetting, remaining
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
                     essentially unchanged. It was popularised in the 1960s with
                     the release of Letraset.....
                   </p>
@@ -245,26 +246,24 @@
                       <img src="./img/ava.png" alt="photo" />
                     </div>
                   </div>
+                </div>
+                <div class="feedback__review review-feedback swiper-slide">
+                  <div class="review-feedback-decor">“</div>
+                  <p class="review-feedback__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer
+                  </p>
+                  <div class="review-feedback-user">
+                    <div class="review-feedback__name">Jonny Thomas</div>
+                    <div class="review-feedback__position">Project Manager</div>
+                    <div class="review-feedback__photo">
+                      <img src="./img/ava.png" alt="photo" />
+                    </div>
                   </div>
-                  <div class="feedback__review review-feedback swiper-slide">
-                    <div class="review-feedback-decor">“</div>
-                    <p class="review-feedback__text">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer 
-                    </p>
-                    <div class="review-feedback-user">
-                      <div class="review-feedback__name">Jonny Thomas</div>
-                      <div class="review-feedback__position">Project Manager</div>
-                      <div class="review-feedback__photo">
-                        <img src="./img/ava.png" alt="photo" />
-                      </div>
-                    </div>
-                    </div>
-                  
+                </div>
               </div>
-              
 
               <div class="swiper-btn swiper-btn-1">
                 <img src="./img/arrow-left2.svg" alt="left" />
@@ -285,7 +284,7 @@
             alt="coffee blast"
           />
         </section>
-       <!-- <section class="subscribe">
+        <section class="subscribe">
           <div class="container subscribe__container">
             <h2 class="subscribe__title title">
               Subscribe to get the Latest News
@@ -388,68 +387,76 @@
               </li>
             </ul>
           </div>
-          <div class="footer__about">
-            <a href="#" class="footer__title">About</a>
-            <ul class="footer__items">
-              <li class="footer__item">
-                <a href="#" class="footer__link">Menu</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Features</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">News & Blogs</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Help & Supports</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__company">
-            <a href="#" class="footer__title">Company</a>
-            <ul class="footer__items">
-              <li class="footer__item">
-                <a href="#" class="footer__link">How we work </a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Terms of service</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Pricing</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">FAQ</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__contact-us">
-            <a href="#" class="footer__title">Contact Us</a>
-            <ul class="footer__items">
-              <li class="footer__item footer__item-adress">
-                <a href="#" class="footer__link"
-                  >Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
-                  Bangalore-560016
-                </a>
-              </li>
-              <li class="footer__item footer__item-adress">
-                <a href="tel:+12029182132" class="footer__link"
-                  >+1 202-918-2132</a
-                >
-              </li>
-              <li class="footer__item footer__item-adress">
-                <a href="mailto:beanscene@mail.com" class="footer__link"
-                  >beanscene@mail.com</a
-                >
-              </li>
-              <li class="footer__item footer__item-adress">
-                <a target="" href="www.beanscene.com" class="footer__link"
-                  >www.beanscene.com</a
-                >
-              </li>
-            </ul>
+          <div data-spollers class="footer__links spollers__item">
+            <details open class="footer__about">
+              <summary
+                data-spoller
+                href="#"
+                class="footer__title spollers__title"
+              >
+                About
+              </summary>
+              <ul class="footer__items spollers__body">
+                <li class="footer__item">
+                  <summary href="#" class="footer__link">Menu</summary>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Features</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">News & Blogs</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Help & Supports</a>
+                </li>
+              </ul>
+            </details>
+            <details open class="footer__company">
+              <summary href="#" class="footer__title">Company</summary>
+              <ul class="footer__items">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">How we work </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Terms of service</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Pricing</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">FAQ</a>
+                </li>
+              </ul>
+            </details>
+            <details open class="footer__contact-us">
+              <summary href="#" class="footer__title">Contact Us</summary>
+              <ul class="footer__items">
+                <li class="footer__item footer__item-adress">
+                  <a href="#" class="footer__link"
+                    >Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
+                    Bangalore-560016
+                  </a>
+                </li>
+                <li class="footer__item footer__item-adress">
+                  <a href="tel:+12029182132" class="footer__link"
+                    >+1 202-918-2132</a
+                  >
+                </li>
+                <li class="footer__item footer__item-adress">
+                  <a href="mailto:beanscene@mail.com" class="footer__link"
+                    >beanscene@mail.com</a
+                  >
+                </li>
+                <li class="footer__item footer__item-adress">
+                  <a target="" href="www.beanscene.com" class="footer__link"
+                    >www.beanscene.com</a
+                  >
+                </li>
+              </ul>
+            </details>
           </div>
         </div>
-       </footer> -->
+      </footer>
     </div>
     <script type="module" src="./mine.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

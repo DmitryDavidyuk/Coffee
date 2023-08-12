@@ -75,3 +75,15 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-btn-2",
   },
 });
+
+const details = document.querySelectorAll("details");
+window.addEventListener("resize", (e) => {
+  details.forEach((obj) => {
+    if (e.currentTarget.innerWidth < 945) {
+      obj.removeAttribute("open");
+    }
+    if (e.currentTarget.innerWidth > 945 && !obj.hasAttribute("open")) {
+      obj.setAttribute("open", "open");
+    }
+  });
+});
