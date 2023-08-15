@@ -68,12 +68,12 @@ body {
 }
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1210px;
   min-width: 320px;
   height: 100%;
   width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .main {
 }
@@ -175,7 +175,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 100%;
 }
 
 .home__subtitle {
@@ -320,14 +319,14 @@ body {
   margin-bottom: 32px;
 }
 .different__list {
+  width: 100%;
   display: flex;
-  /* gap: 4px; */
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 32px;
+  gap: 20px;
 }
 .different__item {
-  flex: 0 1 280px;
+  flex: 1 1 calc(100% / 4 - 20px);
   padding-bottom: 36px;
   padding-top: 36px;
   background-color: #fff9f1;
@@ -407,16 +406,13 @@ body {
   padding: 28px 50px 138px 50px;
 }
 .container__feedback {
-  min-width: 100%;
   text-align: center;
   position: relative;
 }
 
-.swiper {
-  position: static !important;
-}
 .feedback__reviews {
-  padding-bottom: 60px !important;
+  padding-bottom: 60px;
+  max-width: 980px;
 }
 
 .feedback__title {
@@ -469,25 +465,31 @@ body {
   bottom: -80px;
   left: 0;
 }
+.swiper__container {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 980px;
+}
 .swiper-btn {
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   padding: 25px;
   background-color: #f9c06a;
   border-radius: 16px;
   width: 82px;
   height: 82px;
-  top: 45%;
+  top: calc(100vh / 5);
   cursor: pointer;
 }
 .swiper-btn img {
   width: 100%;
 }
 .swiper-btn-1 {
-  left: -3%;
+  left: -42px;
 }
 .swiper-btn-2 {
-  right: -3%;
+  right: -42px;
 }
 .coffe-blast-1 {
   position: absolute;
@@ -649,7 +651,10 @@ body {
 
 @media (max-width: 1140px) {
   .different__item {
-    flex: 0 0 50%;
+    flex: 1 1 calc(100% / 2 - 20px);
+  }
+  .different__list {
+    gap: 10px;
   }
 }
 @media (max-width: 1024px) {
@@ -795,9 +800,7 @@ body {
   .coffe-blast {
     display: none;
   }
-  .different__item {
-    flex: 0 0 50%;
-  }
+
   .coffe-blast-2 {
     display: none;
   }
@@ -828,6 +831,12 @@ body {
     height: 50px;
     padding: 10px;
   }
+  .swiper-btn-1 {
+    left: -25px;
+  }
+  .swiper-btn-2 {
+    right: -25px;
+  }
 
   .coffe-blast-1 {
     display: none;
@@ -855,9 +864,6 @@ body {
   }
   .different__text-content {
     font-size: 14px;
-  }
-  .container__different {
-    max-width: 320px;
   }
   .review-feedback__text {
     font-size: 10px;
