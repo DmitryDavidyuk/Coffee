@@ -175,6 +175,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  height: 100%;
 }
 
 .home__subtitle {
