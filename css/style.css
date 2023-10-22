@@ -132,32 +132,55 @@ body {
   font-size: 2.5rem;
   line-height: 127%;
   z-index: 1;
+  flex: 0 0 auto;
 }
 
 .menu__list {
   display: flex;
   gap: 60px;
   padding: 0 10px;
+  
 }
 .menu__list-link {
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
+ transition: all 0.3s ease 0s;
+}
+
+.menu__list-link:hover,
+.menu__list-link:focus {
+	text-decoration: underline;
+	font-weight: 800;
 }
 .menu__btn {
   display: none;
 }
+.header__buttons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	row-gap: 10px;
+}
 
 .header__button-1 {
+  z-index: 2;
   color: #fff;
   text-decoration-line: underline;
-  position: relative;
+  padding: 0 15px;
+  position: relative;	
+  flex: 0 0 auto;
+}
+.header__button-1:hover {
+	font-weight: 800;
 }
 
 .header__button-2 {
-  margin-left: 35px;
+  /* margin-left: 35px; */
   position: relative;
   z-index: 1;
+  flex: 0 0 auto;
 }
 
 /*--------home--------------------------------------------------------*/
@@ -240,6 +263,7 @@ body {
   bottom: -25px;
 }
 .coffe-blast-2 {
+	pointer-events: none;
   position: absolute;
   top: -190px;
   right: 0;
@@ -481,6 +505,11 @@ body {
   height: 82px;
   top: calc(100vh / 5);
   cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.swiper-btn:hover,
+.swiper-btn:focus {
+	background-color: #fcb03e;
 }
 .swiper-btn img {
   width: 100%;
@@ -557,7 +586,12 @@ body {
   border-radius: 4px;
   background: #f9c06a;
   box-shadow: 0px 6px 12px 0px rgba(249, 192, 106, 0.22);
+  transition: all 0.3s ease 0s;
 }
+.subscribe__button:hover, .subscribe__button:focus {
+	background-color: #fcb03e;
+}
+
 
 .subscribe__img-1 {
   position: absolute;
@@ -591,6 +625,10 @@ body {
 .footer__link {
   display: flex;
   align-items: center;
+}
+.footer__link:hover {
+	text-decoration: underline;
+	font-weight: 800;
 }
 
 .container__footer {
@@ -665,6 +703,9 @@ body {
 }
 
 @media (max-width: 944px) {
+	.menu__list {
+    gap: 45px;
+  }
   .container__discover {
     flex-direction: column;
   }
@@ -699,6 +740,7 @@ body {
   }
   .header__logo {
     font-size: 1.8rem;
+	 display: block;
   }
   .button {
     border-radius: 24px;
@@ -720,7 +762,7 @@ body {
     background-color: #a17c46;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     transition: all 0.3s ease 0s;
   }
   .menu__list.menu--open {
@@ -775,7 +817,7 @@ body {
     order: 1;
   }
   .header__button-2 {
-    margin-left: 15px;
+    /* margin-left: 15px; */
   }
 }
 @media (max-width: 768px) {
